@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hija’s Books — The Sammy Series</title>
+  <meta name="description" content="Join Sammy and friends on daring rescues and clever mysteries. Buy the children’s ebook by Hina Hija and follow our socials." />
+  <style>
+    :root{
+      --bg:#f5fbf6;
+      --card:#ffffff;
+      --accent:#16a34a;
+      --accent-2:#f59e0b;
+      --text:#0f172a;
+      --muted:#64748b;
+      --shadow:0 10px 30px rgba(16,24,16,.10);
+      --radius:22px;
+    }
+    body{
+      margin:0; font-family: system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #eaf7ed, transparent), radial-gradient(1000px 600px at 120% 10%, #f0fdf4, transparent), var(--bg);
+      color:var(--text);
+    }
+    .wrap{ max-width:880px; margin:0 auto; padding:28px 20px 80px; }
+    header{ display:flex; align-items:center; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:8px; }
+    .logo{ width:92px; height:92px; border-radius:20px; object-fit:cover; box-shadow:var(--shadow); background:#fff; border:2px solid #e2e8f0; }
+    .brand h1{ font-size:clamp(26px, 5vw, 40px); margin:0; }
+    .brand p{ margin:4px 0 0; color:var(--muted); }
+    .card{ background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:28px; margin:22px 0; }
+    .hero h2{ margin:0 0 8px; }
+    .hero p{ margin:8px 0 0; line-height:1.6; }
+    .banner{ background:#ecfdf5; border:1px dashed #10b981; color:#065f46; padding:10px 14px; border-radius:12px; font-weight:600; display:inline-block; }
+    .cta{ display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+    .btn{ padding:14px 18px; border-radius:14px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:10px; }
+    .btn.primary{ background:var(--accent); color:#fff; }
+    .btn.secondary{ background:#fff7ed; color:#7c2d12; border:2px solid #fed7aa; }
+    .btn.disabled{ background:#e2e8f0; color:#475569; cursor:not-allowed; }
+    .socials{ display:flex; gap:12px; flex-wrap:wrap; margin-top:6px; }
+    .socials a{ display:inline-flex; align-items:center; justify-content:center; width:42px; height:42px; border-radius:50%; background:#ffffff; box-shadow:var(--shadow); border:1px solid #f1f5f9; }
+    .foot{ text-align:center; color:var(--muted); margin-top:22px; font-size:14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="logo" src="hijas-books-logo.png" alt="Hija’s Books Logo" />
+      <div class="brand">
+        <h1>Hija’s Books</h1>
+        <p>Adventure-filled children’s stories by Hina Hija.</p>
+      </div>
+    </header>
+    <section class="card hero">
+      <h2>The Sammy Series</h2>
+      <p>Are you ready for daring rescues, clever mysteries, and unstoppable teamwork? Join Sammy the squirrel and friends as they race through whispering trees, solve age-old secrets, and prove that every skill has a place in saving the day.</p>
+      <div class="banner">Checkout link coming soon — join the list to get notified!</div>
+      <div class="cta">
+        <a class="btn disabled" href="#">Buy on Launch</a>
+        <a class="btn secondary" href="sample.pdf" target="_blank" rel="noopener">Read a Free Sample</a>
+      </div>
+    </section>
+    <section>
+      <h3>Find us online</h3>
+      <div class="socials">
+        <a href="https://instagram.com/yourhandle" target="_blank" title="Instagram">IG</a>
+        <a href="https://facebook.com/yourhandle" target="_blank" title="Facebook">FB</a>
+        <a href="https://tiktok.com/@yourhandle" target="_blank" title="TikTok">TT</a>
+      </div>
+    </section>
+    <p class="foot">© <span id="year"></span> Hija’s Books • Written by Hina Hija</p>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
